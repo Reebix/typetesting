@@ -1,0 +1,17 @@
+[package]
+name = "typetesting"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+unused_self = { level = "allow", priority = 0 }
+
+
+[dependencies]
+log = "0.4.34"
+env_logger = "0.11.11"
+
+dotenv = "0.15.0"
