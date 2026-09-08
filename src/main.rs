@@ -1,6 +1,6 @@
 use crate::light::{Light, LightState};
-use log::{error, trace};
 use std::io::stdin;
+use tracing::{error, trace};
 
 mod light;
 
