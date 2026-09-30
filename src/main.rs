@@ -6,6 +6,7 @@ mod light;
 
 fn main() {
     dotenv::dotenv().ok();
+    dotenv::from_filename(".log_env").ok();
     env_logger::init();
 
     let light = Light::new();
